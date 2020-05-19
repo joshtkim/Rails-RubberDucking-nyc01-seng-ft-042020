@@ -1,0 +1,10 @@
+
+<% if flash[:errors]%>
+    <% flash[:errors].each do |message|%>
+    <p><%= message %></p>
+    <%end%>
+<%end%>
+
+<h1>Edit Duck</h1>
+
+<%= render 'form' %>
